@@ -1,6 +1,7 @@
 import axios from "./util/axios.customize"
 import { useEffect } from "react"
-
+import Header from "./components/layout/header"
+import { Outlet } from "react-router-dom"
 
 //import { useState } from 'react'
 function App() {
@@ -16,9 +17,8 @@ function App() {
 
   return (
     <>
-      <p>
-        Click on the Vite and React logos to learn more
-      </p>
+     <Header/>
+     <Outlet/>
     </>
   )
 }

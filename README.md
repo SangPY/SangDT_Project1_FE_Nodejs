@@ -20,3 +20,8 @@ Cách chạy tại chế độ production:
 3. Update file .env.production (nếu cần thiết)
 4. Build dự án: npm run build
 5. Chạy dự án: npm run preview
+
+NPM I
+npm i --save-exact axios@1.7.2
+npm i --save-exact antd@5.19.0 react-router-dom@6.24.0
+npm i --save-exact @ant-design/icons@5.3.7

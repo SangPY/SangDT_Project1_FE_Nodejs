@@ -1,8 +1,11 @@
 import React from 'react';
 import { Button, Checkbox, Form, Input, notification } from 'antd';
 import { createUserApi } from '../util/api';
+import { useNavigate } from 'react-router-dom';
 
 const RegisterPage = () => {
+    const navigate = useNavigate();
+
     const onFinish = async (values) => {
         const {name, email, password} = values;
 
@@ -12,7 +15,8 @@ const RegisterPage = () => {
             notification.success({
                 message: "create user",
                 description: "Success"
-            })
+            });
+            navigate("/login");
         } else {
             notification.error({
                 message: "create user",
